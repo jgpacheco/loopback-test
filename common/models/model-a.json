@@ -1,0 +1,24 @@
+{
+  "name": "ModelA",
+  "plural": "ModelA",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "modelsB": {
+      "type": "referencesMany",
+      "model": "ModelB",
+      "property": "modelsB",
+      "options": {
+        "validate": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
